@@ -50,7 +50,7 @@ const points = [
 const blogCard = () => {
     let x = points.map((data) => {
         let singleBlog =
-            `<div class="w-full max-w-sm md:h-52 px-6 py-6 border border-slate-700 m-3 rounded-md flex flex-col justify-between">
+            `<div class="w-full max-w-sm lg:h-56 md:h-64 px-6 py-6 border border-slate-700 m-3 rounded-md flex flex-col justify-between">
             <div>
                 <h1 class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent px-5 py-2 rounded hover:bg-gray-300 text-2xl transition">${data.title}</h1>
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">${data.description}</p>
@@ -82,7 +82,7 @@ const review = [
     },
     {
         "username": "emily jones",
-        "review": "This course exceeded my expectations in every way. From the very first lesson to the last, I found myself completely immersed in the material. The content was not only practical but also extremely relevant to my current work. The practical examples and case studies included throughout the course were invaluable, and I’ve already started applying what I learned in real-world situations. The instructor did a phenomenal job of breaking down complex concepts into manageable pieces, making it easier for me to understand and implement the material. I will definitely recommend this course to others."
+        "review": "This course exceeded my expectations in every way. From the very first lesson to the last, I found myself completely immersed in the material. The content was not only practical but also extremely relevant to my current work. The practical examples and case studies included throughout the course were invaluable, and I’ve already started applying what I learned in real-world situations. The instructor did a phenomenal job of breaking down complex concepts into manageable pieces, making it easier for me to understand and implement the material."
     },
     {
         "username": "david brown",
@@ -102,7 +102,7 @@ const review = [
     },
     {
         "username": "michael lee",
-        "review": "This course went above and beyond my expectations. The content was exceptionally well-organized, and the depth of knowledge provided was outstanding. I particularly appreciated how the course took complex topics and made them accessible and understandable. The instructor’s explanations were clear, and the pacing was perfect—challenging enough to keep me engaged but not too fast to leave me behind. I feel confident in my new skills and have already started applying them in my work. I highly recommend this course to anyone looking for an in-depth and enriching learning experience."
+        "review": "This course went above and beyond my expectations. The content was exceptionally well-organized, and the depth of knowledge provided was outstanding. I particularly appreciated how the course took complex topics and made them accessible and understandable. The instructor’s explanations were clear, and the pacing was perfect—challenging enough to keep me engaged but not too fast to leave me behind. I feel confident in my new skills and have already started applying them in my work. I highly recommend this course to anyone looking for an in-depth."
     },
     {
         "username": "olivia clark",
