@@ -197,7 +197,7 @@ const checkUser = () => {
     console.log(token1.username)
 
     if(!token1){
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     }else{
         signup.innerText = token1.username
     }
@@ -207,7 +207,7 @@ checkUser()
 const logout = () => {
     checkUser();
     login.innerText = "Logout";
-    login.setAttribute("href", "/login.html"); 
+    login.setAttribute("href", "login.html"); 
 };
 
 login.addEventListener("click", ()=>{

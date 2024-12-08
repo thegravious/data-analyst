@@ -13,10 +13,10 @@ const getDetails = () => {
     console.log(token1)
 
     if(!token1){
-        window.location.href = "/signup.html";
+        window.location.href = "signup.html";
     }else{
         if(username.value == token1.email ||username.value == token1.username && password.value == token1.password){
-            window.location.href = "/index.html";
+            window.location.href = "index.html";
         }else{
             alert("Incorrect Passord or Email")
         }

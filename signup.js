@@ -27,14 +27,14 @@ const getDetails = () => {
         if (userDetails.password === userDetails.passwordConfirmation && userDetails.password.length > 0) {
             localStorage.setItem("userDetails", JSON.stringify(userDetails))
             alert("Account Created Successfully")
-            window.location.href = "/login.html";
+            window.location.href = "login.html";
         } else {
             alert("password error")
         }
     } else {
         localStorage.setItem("userDetails", JSON.stringify(userDetails))
         alert("Account Created Successfully")
-        window.location.href = "/login.html";
+        window.location.href = "login.html";
     }
 
 
