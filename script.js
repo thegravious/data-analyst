@@ -2,6 +2,9 @@ let blogMaster = document.getElementById('blogMaster')
 let reviewMaster = document.getElementById('review')
 let rightarrow = document.getElementById('right')
 let leftarrow = document.getElementById('left')
+let login  = document.getElementById("login")
+let signup = document.getElementById("signup")
+
 const points = [
     {
         "title": "Excel",
@@ -186,3 +189,29 @@ const mobileMenu = document.getElementById('mobile-menu');
 menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
+
+
+const checkUser = () => {
+    let token = localStorage.getItem("userDetails")
+    let token1 = JSON.parse(token)
+    console.log(token1.username)
+
+    if(!token1){
+        window.location.href = "/login.html";
+    }else{
+        signup.innerText = token1.username
+    }
+}
+checkUser()
+
+const logout = () => {
+    checkUser();
+    login.innerText = "Logout";
+    login.setAttribute("href", "/login.html"); 
+};
+
+login.addEventListener("click", ()=>{
+    localStorage.removeItem("userDetails")
+})
+
+logout()

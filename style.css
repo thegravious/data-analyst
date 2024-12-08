@@ -1,14 +1,14 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .anton {
     font-family: "Anton", serif;
-    font-weight:100;
+    font-weight: 100;
     font-style: normal;
-  }
+}
 
-  #bg-move {
+#bg-move {
     background: url(./img/bg.gif) no-repeat center center;
     background-size: cover;
     width: 100vw;
@@ -16,15 +16,17 @@ html {
     background-position: center;
 }
 
-#overlay{
+#overlay {
     position: absolute;
-    top:0px;
+    top: 0px;
 }
 
 .blog-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-    gap: 20px; /* Adds space between the divs */
+    grid-template-columns: repeat(4, 1fr);
+    /* Creates 4 equal columns */
+    gap: 20px;
+    /* Adds space between the divs */
 }
 
 .blog-card {
@@ -35,10 +37,24 @@ html {
 }
 
 
-#certi{
+#certi {
     background: url(./img/certi.png) no-repeat center center;
     background-size: cover;
     width: 100vw;
     height: 120vh;
     background-position: center;
+}
+
+#bg-move1{
+    backdrop-filter: blur(10px);
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-container,
+.form-container label,
+.form-container input {
+    color: black;
 }
