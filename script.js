@@ -207,11 +207,11 @@ checkUser()
 const logout = () => {
     checkUser();
     login.innerText = "Logout";
-    login.setAttribute("href", "login.html"); 
 };
 
 login.addEventListener("click", ()=>{
-    localStorage.removeItem("userDetails")
+    login.setAttribute("href", "login.html");
+    // localStorage.removeItem("userDetails")
 })
 
 logout()
