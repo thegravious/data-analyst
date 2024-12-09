@@ -5,6 +5,9 @@ let leftarrow = document.getElementById('left')
 let login  = document.getElementById("login")
 let signup = document.getElementById("signup")
 
+let login1  = document.getElementById("login1")
+let signup1 = document.getElementById("signup1")
+
 const points = [
     {
         "title": "Excel",
@@ -200,6 +203,8 @@ const checkUser = () => {
         window.location.href = "login.html";
     }else{
         signup.innerText = token1.username
+        signup1.innerText = token1.username
+        signup.removeAttribute("href")
     }
 }
 checkUser()
@@ -207,7 +212,9 @@ checkUser()
 const logout = () => {
     checkUser();
     login.innerText = "Logout";
+    login1.innerText = "Logout"
 };
+
 
 login.addEventListener("click", ()=>{
     login.setAttribute("href", "login.html");

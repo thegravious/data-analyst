@@ -24,12 +24,12 @@ const getDetails = () => {
     console.log(token1)
 
     if (token1) {
-        if (userDetails.password === userDetails.passwordConfirmation && userDetails.password.length > 0) {
+        if (userDetails.password === userDetails.passwordConfirmation && userDetails.password.length > 0 && userDetails.email != token1.email) {
             localStorage.setItem("userDetails", JSON.stringify(userDetails))
             alert("Account Created Successfully")
             window.location.href = "login.html";
         } else {
-            alert("password error")
+                alert("Email already exist")
         }
     } else {
         localStorage.setItem("userDetails", JSON.stringify(userDetails))
